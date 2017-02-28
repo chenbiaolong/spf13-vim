@@ -1,3 +1,18 @@
+
+#个人配置
+```
+.vimrc.before.fork 
+let g:spf13_bundle_groups=['general', 'programming', 'misc', 'neocomplcache']
+
+.vimrc.bundles.local
+Bundle 'aperezdc/vim-template'
+
+.vimrc.local
+colorscheme peaksea
+set shiftwidth=2
+set nospell
+let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -Wpedantic"
+```
 # spf13-vim : Steve Francia's Vim Distribution
 
                     __ _ _____              _
