@@ -1,18 +1,23 @@
 
-#个人配置
+# 个人配置
+
+按照步骤装完spf13-vim后修改以下文件
 ```
-.vimrc.before.fork 
+~/.vimrc.before.fork 
 let g:spf13_bundle_groups=['general', 'programming', 'misc', 'neocomplcache']
 
-.vimrc.bundles.local
+~/.vimrc.bundles.local
 Bundle 'aperezdc/vim-template'
 
-.vimrc.local
+~/.vimrc.local
 colorscheme peaksea
 set shiftwidth=2
 set nospell
 let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -Wpedantic"
+
 ```
+添加完以上文件后打开vim，运行`:BundleInstall`
+
 # spf13-vim : Steve Francia's Vim Distribution
 
                     __ _ _____              _
